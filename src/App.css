@@ -1,0 +1,71 @@
+.App {
+	background: #333;
+	user-select: none;
+}
+
+.App video {
+	display: none;
+}
+
+.App canvas {
+	display: none;
+}
+
+.App img {
+	color: white;
+	display: block;
+	transition: all 0.25s ease;
+	box-shadow: 0 0 0.5em rgba(0,0,0,0.5);
+}
+
+.App img.filter1 {
+	filter: url('red_filter.svg#redfilter1');
+}
+
+.App img.filter2 {
+	filter: url('red_filter.svg#redfilter2');
+}
+
+@media (orientation: portrait) {
+	.App img {
+		transform: rotate(90deg);
+	}
+}
+
+.Center {
+	width: 100vw;
+	height: 100vh;
+}
+
+.Filters {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	position: fixed;
+	top: 0;
+	right: 0;
+	z-index: 1;
+}
+
+.Filters li {
+	font-size: 125%;
+	background: #333;
+	border: 1px solid;
+	padding: 0.5em;
+	border-radius: 1em;
+	cursor: pointer;
+	color: rgb(192,0,0);
+	margin-top: 0.5em;
+	margin-right: 0.5em;
+	text-align: center;
+	transition: all 0.25s ease;
+	line-height: 1.5em;
+	width: 1.5em;
+	font-weight: bold;
+}
+
+.Filters li.selected {
+	color: white;
+	background: rgb(192,0,0);
+	box-shadow: 0 0 0.5em rgba(0,0,0,0.5);
+}
