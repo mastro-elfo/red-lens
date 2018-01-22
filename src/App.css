@@ -4,7 +4,7 @@
 }
 
 .App video {
-	display: none;
+	/* display: none; */
 }
 
 .App canvas {
@@ -12,17 +12,17 @@
 }
 
 .App img {
+	display: none;
 	color: white;
-	display: block;
 	transition: all 0.25s ease;
 	box-shadow: 0 0 0.5em rgba(0,0,0,0.5);
 }
 
-.App img.filter1 {
+.App *.filter1 {
 	filter: url('red_filter.svg#redfilter1');
 }
 
-.App img.filter2 {
+.App *.filter2 {
 	filter: url('red_filter.svg#redfilter2');
 }
 
