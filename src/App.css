@@ -7,22 +7,11 @@
 	/* display: none; */
 }
 
-.App canvas {
-	display: none;
-}
-
-.App img {
-	display: none;
-	color: white;
-	transition: all 0.25s ease;
-	box-shadow: 0 0 0.5em rgba(0,0,0,0.5);
-}
-
-.App *.filter1 {
+.App .filter1 {
 	filter: url('red_filter.svg#redfilter1');
 }
 
-.App *.filter2 {
+.App .filter2 {
 	filter: url('red_filter.svg#redfilter2');
 }
 

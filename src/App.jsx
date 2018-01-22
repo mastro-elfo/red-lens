@@ -42,14 +42,9 @@ class App extends Component {
 				height: this.refs.video.videoHeight
 			});
 		});
-
-		this.clearDisplay();
-		this.idle();
 	}
 
-	componentWillUnmount(){
-		clearTimeout(this.timeout);
-	}
+	componentWillUnmount(){}
 
 	render() {
 		return (
@@ -60,31 +55,10 @@ class App extends Component {
 					<li onClick={()=>this.setState({filter: 2})} className={this.state.filter === 2 ? 'selected' : ''}><span>2</span></li>
 				</ul>
 				<ReactCenter className="Center" style={styles.Center}>
-					<img ref="display" src="" alt="Loading..." className={'filter'+this.state.filter}/>
-					<canvas ref="canvas" width={this.state.width} height={this.state.height} className={'filter'+this.state.filter}></canvas>
 					<video ref="video" className={'filter'+this.state.filter}>Video stream not available.</video>
 				</ReactCenter>
 			</div>
 		);
-	}
-
-	clearDisplay(){
-		let context = this.refs.canvas.getContext('2d');
-	    context.fillStyle = "#AAA";
-	    context.fillRect(0, 0, this.refs.canvas.width, this.refs.canvas.height);
-	    this.refs.display.setAttribute('src', this.refs.canvas.toDataURL('image/png'));
-	}
-
-	takePicture(){
-		this.refs.canvas.getContext('2d').drawImage(this.refs.video, 0, 0, this.state.width, this.state.height);
-		this.refs.display.setAttribute('src', this.refs.canvas.toDataURL('image/png'));
-	}
-
-	idle() {
-		this.timeout = setTimeout(() => {
-			this.takePicture();
-			this.idle();
-		}, 0);
 	}
 }
 
