@@ -61,9 +61,9 @@ class App extends Component {
 				</ul>
 				<ReactCenter className="Center" style={styles.Center}>
 					<img ref="display" src="" alt="Loading..." className={'filter'+this.state.filter}/>
+					<canvas ref="canvas" width={this.state.width} height={this.state.height} className={'filter'+this.state.filter}></canvas>
+					<video ref="video" className={'filter'+this.state.filter}>Video stream not available.</video>
 				</ReactCenter>
-				<canvas ref="canvas" width={this.state.width} height={this.state.height}></canvas>
-				<video ref="video">Video stream not available.</video>
 			</div>
 		);
 	}
