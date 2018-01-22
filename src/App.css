@@ -26,12 +26,6 @@
 	filter: url('red_filter.svg#redfilter2');
 }
 
-@media (orientation: portrait) {
-	.App img {
-		transform: rotate(90deg);
-	}
-}
-
 .Center {
 	width: 100vw;
 	height: 100vh;
