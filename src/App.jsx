@@ -7,7 +7,7 @@ import Test from './Test';
 export default class App extends Component {
 	render() {
 		return (
-			<BrowserRouter basename="/redlens">
+			<BrowserRouter basename="/red-lens">
 				<Switch>
 					<Route path="/" exact component={Main}/>
 					<Route path="/test" component={Test}/>
