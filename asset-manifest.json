@@ -1,12 +1,13 @@
 {
-  "main.css": "static/css/main.3b507d99.css",
-  "main.css.map": "static/css/main.3b507d99.css.map",
-  "main.js": "static/js/main.57576c07.js",
-  "main.js.map": "static/js/main.57576c07.js.map",
+  "main.css": "static/css/main.14925422.css",
+  "main.css.map": "static/css/main.14925422.css.map",
+  "main.js": "static/js/main.d126a00a.js",
+  "main.js.map": "static/js/main.d126a00a.js.map",
   "static/media/fontawesome-webfont.eot": "static/media/fontawesome-webfont.674f50d2.eot",
   "static/media/fontawesome-webfont.svg?v=4.7.0": "static/media/fontawesome-webfont.912ec66d.svg",
   "static/media/fontawesome-webfont.ttf?v=4.7.0": "static/media/fontawesome-webfont.b06871f2.ttf",
   "static/media/fontawesome-webfont.woff2?v=4.7.0": "static/media/fontawesome-webfont.af7ae505.woff2",
   "static/media/fontawesome-webfont.woff?v=4.7.0": "static/media/fontawesome-webfont.fee66e71.woff",
+  "static/media/magnifier.svg": "static/media/magnifier.2d9106e7.svg",
   "static/media/red_filter.svg": "static/media/red_filter.d133386b.svg"
 }
