@@ -4,6 +4,8 @@
   "private": true,
   "homepage": "https://mastro-elfo.github.io/red-lens",
   "dependencies": {
+    "FortAwesome/Font-Awesome": "*",
+    "font-awesome": "^4.7.0",
     "react": "^16.2.0",
     "react-center": "^1.1.1",
     "react-dom": "^16.2.0",
@@ -15,7 +17,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-	"predeploy": "npm run build",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
   "devDependencies": {

@@ -5,14 +5,23 @@
 
 .App video {
 	/* display: none; */
+	background: transparent;
+	position: absolute;
+}
+
+.App .videoContainer {
+	position: absolute;
+	overflow: hidden;
+	z-index: 1;
+	border-radius: 50em;
+	margin-left: -0em;
+	margin-top: -0em;
+	border: 2em solid rgba(255, 0, 0, 0.5);
+	transition: opacity 0.25s ease;
 }
 
 .App .filter1 {
 	filter: url('red_filter.svg#redfilter1');
-}
-
-.App .filter2 {
-	filter: url('red_filter.svg#redfilter2');
 }
 
 .Center {
